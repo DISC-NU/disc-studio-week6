@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.App {
+  width: auto;
+  min-width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  margin: -5px;
+  background-color: rgba(104, 210, 255, 0.6);
+}
+
+.space {
+  height: 10%;
+  background-color: rgba(104, 210, 255, 0.48);
+}
+
+.hero {
+  z-index: 10;
+  width: 100vw;
+  height: 60vh;
+  background-image: url('https://miro.medium.com/max/6300/1*w2X7ExLGBzb-iznRW1rAVw.jpeg');
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin-bottom: 2%;
+}
+
+.intro {
+  font-size: 800%;
+  font-weight: bold;
+  color: goldenrod;
+  text-shadow: 5px 5px #151515;
+}
+
+.intro-caption {
+  z-index: 10;
+  width: 80%;
+  height: 10%;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  font-size: 200%;
+  color: white;
+}
+
+@-webkit-keyframes flash {
+  0% { opacity: .2; }
+  50% { opacity: .5;}
+  100% { opacity: 1; }
+}
+
+@keyframes flash {
+0% { opacity: .2; }
+50% { opacity: .5; }
+100% { opacity: 1; }
+}
+
+.intro-caption:hover {
+  cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-animation: flash 1s;
+  animation: flash 1s;
+}
+
+.about-me, .skills, .contact {
+  font-family: "Montserrat";
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.lorem {
+  margin-top: 2%;
+  font-family: "Montserrat";
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.skill {
+  border: 3px solid teal;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 16px;
+  margin-top: 5px;
+  width: 100px;
+  font-size: 150%;
+  text-align: center;
+}
+
+.skill:hover {
+  cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-animation: flash 1s;
+  animation: flash 1s;
+}
+
+.skills-grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+}
